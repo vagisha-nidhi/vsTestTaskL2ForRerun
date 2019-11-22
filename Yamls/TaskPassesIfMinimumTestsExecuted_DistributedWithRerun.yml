@@ -21,7 +21,7 @@ jobs:
   - task: VSTest@2
     inputs:
       testSelector: 'testAssemblies'
-      testAssemblyVer2: '**/*MsTestUnitTestProject*.dll'
+      testAssemblyVer2: '**/*vsTestTaskL2ForRerun*.dll'
       searchFolder: '$(System.DefaultWorkingDirectory)\MsTestProject\bin\Debug\net472'
       batchingBasedOnAgentsOption: 'customBatchSize'
       failOnMinTestsNotRun: true
