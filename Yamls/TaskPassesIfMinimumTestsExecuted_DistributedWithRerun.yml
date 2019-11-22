@@ -29,5 +29,4 @@ jobs:
       vsTestVersion: 'toolsInstaller'
       rerunFailedTests: true
       rerunMaxAttempts: '3'
-
-
+      rerunFailedThreshold: '100'
