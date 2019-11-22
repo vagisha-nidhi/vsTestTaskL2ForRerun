@@ -23,8 +23,9 @@ jobs:
       testSelector: 'testAssemblies'
       testAssemblyVer2: '**/*vsTestTaskL2ForRerun*.dll'
       searchFolder: '$(System.DefaultWorkingDirectory)\MsTestProject\bin\Debug\net472'
-      failOnMinTestsNotRun: 'true'
+      failOnMinTestsNotRun: true
       minimumExpectedTests: '3'
       vsTestVersion: 'toolsInstaller'
-      rerunFailedTests: 'true'
+      rerunFailedTests: true
+      rerunFailedThreshold: '100' 
       rerunMaxAttempts: '3'
