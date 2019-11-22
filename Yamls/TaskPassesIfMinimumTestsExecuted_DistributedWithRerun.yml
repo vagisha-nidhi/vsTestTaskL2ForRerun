@@ -24,11 +24,10 @@ jobs:
       testAssemblyVer2: '**/*MsTestUnitTestProject*.dll'
       searchFolder: '$(System.DefaultWorkingDirectory)\MsTestUnitTestProject\bin\Debug\net472'
       batchingBasedOnAgentsOption: 'customBatchSize'
-      failOnMinTestsNotRun: 'true'
-      minimumExpectedTests: '4' 
+      failOnMinTestsNotRun: true
+      minimumExpectedTests: '3' 
       vsTestVersion: 'toolsInstaller'
-      rerunFailedTests: 'true'
+      rerunFailedTests: true
       rerunMaxAttempts: '3'
-      batchingBasedOnAgentsOption: 'customBatchSize'
 
 
