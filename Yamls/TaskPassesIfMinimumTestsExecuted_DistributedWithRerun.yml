@@ -1,4 +1,5 @@
 
+  
 # Starter pipeline
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
@@ -23,9 +24,8 @@ jobs:
       testSelector: 'testAssemblies'
       testAssemblyVer2: '**/*vsTestTaskL2ForRerun*.dll'
       searchFolder: '$(System.DefaultWorkingDirectory)\MsTestProject\bin\Debug\net472'
-      batchingBasedOnAgentsOption: 'customBatchSize'
       failOnMinTestsNotRun: true
-      minimumExpectedTests: '3' 
+      minimumExpectedTests: '4' 
       vsTestVersion: 'toolsInstaller'
       rerunFailedTests: true
       rerunMaxAttempts: '3'
